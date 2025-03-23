@@ -1,0 +1,6 @@
+@GisApi_HostAddress = http://localhost:5249
+
+GET {{GisApi_HostAddress}}/Gis.Api/
+Accept: application/json
+
+###

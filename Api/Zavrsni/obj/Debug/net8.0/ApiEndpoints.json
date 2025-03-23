@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Gis.Api.Controllers.UcenikController",
+    "Method": "GetUcenici",
+    "RelativePath": "api/Ucenik",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

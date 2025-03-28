@@ -8,6 +8,8 @@
 [Dd]ebug/
 [Dd]ebugPublic/
 
+bin/
+obj/
 # Ignore .NET Core files
 project.lock.json
 project.fragment.lock.json

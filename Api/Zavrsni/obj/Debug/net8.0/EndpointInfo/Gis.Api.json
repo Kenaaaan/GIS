@@ -5,6 +5,29 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Skola": {
+      "get": {
+        "tags": [
+          "Skola"
+        ],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Ucenik": {
       "get": {
         "tags": [

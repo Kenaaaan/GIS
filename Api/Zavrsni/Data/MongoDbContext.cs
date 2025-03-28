@@ -18,6 +18,11 @@ namespace Gis.Api.Data
         {
             return _database.GetCollection<Ucenik>("UceniciPoLokacijama");
         }
+
+        public IMongoCollection<Skola> GetSkoleCollection()
+        {
+            return _database.GetCollection<Skola>("Skole");
+        }
     }
 
 }

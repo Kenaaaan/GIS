@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Gis.Api.Repositories;
-using Gis.Api.Data;
 namespace Gis.Api.Controllers;
 
 

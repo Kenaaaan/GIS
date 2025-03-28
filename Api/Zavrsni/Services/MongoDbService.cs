@@ -17,6 +17,11 @@ namespace Zavrsni.Services
         {
             return _context.GetUceniciCollection();
         }
+
+        public IMongoCollection<Skola> GetSkoleCollection()
+        {
+            return _context.GetSkoleCollection();
+        }
     }
 
 }

@@ -1,0 +1,40 @@
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]evelopment/
+[Dd]ebug\_/
+[Dd]ebug/
+[Dd]ebug/
+[Dd]ebugPublic/
+
+# Ignore .NET Core files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+.idea/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer log files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer log files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+.vscode/
+.idea/

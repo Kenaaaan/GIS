@@ -1,22 +1,22 @@
 ﻿using Gis.Api.Data;
-using MongoDB.Driver;
 using Gis.Api.Models;
+using MongoDB.Driver;
 
 namespace Gis.Api.Repositories
 {
-    public class UcenikRepository
+    public class SkolaRepository
     {
         private readonly MongoDbContext _context;
 
-        public UcenikRepository(MongoDbContext context)
+        public SkolaRepository(MongoDbContext context)
         {
             _context = context;
         }
 
-        public async Task<List<Ucenik>> GetUcenici(int limit)
+        public async Task<List<Skola>> GetSkole(int limit)
         {
-            return await _context.GetUceniciCollection()
-                                 .Find(_ => true)  
+            return await _context.GetSkoleCollection()
+                                 .Find(_ => true)
                                  .Limit(limit)
                                  .ToListAsync();
         }

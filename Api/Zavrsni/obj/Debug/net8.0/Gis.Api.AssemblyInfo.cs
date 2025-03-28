@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gis.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bb054b0191eb3cc0c2a640cfcb1f908472d8904")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8110602430ed623e5ae40c2903ba0ad5be9b33a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gis.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gis.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

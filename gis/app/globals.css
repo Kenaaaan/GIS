@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Define the default theme (light mode) */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-primary: #1d4ed8; /* Blue */
+  --color-secondary: #9333ea; /* Purple */
+  --color-accent: #22c55e; /* Green */
+  --color-border: #e5e7eb; /* Light Gray */
+  --color-hover: #f3f4f6; /* Hover Gray */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Define the dark theme */
+@theme dark {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-primary: #3b82f6; /* Lighter Blue */
+  --color-secondary: #a855f7; /* Lighter Purple */
+  --color-accent: #4ade80; /* Lighter Green */
+  --color-border: #374151; /* Dark Gray */
+  --color-hover: #1f2937; /* Darker Gray */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Apply theme variables to the body */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  border-right: 1px solid var(--color-border);
+}
+
+.sidebar a {
+  color: var(--color-foreground);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  transition: background 0.2s ease;
+}
+
+.sidebar a:hover {
+  background: var(--color-hover);
+}
+
+/* Button styles */
+button {
+  background: var(--color-hover);
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  background: var(--color-primary);
+  color: #ffffff;
 }

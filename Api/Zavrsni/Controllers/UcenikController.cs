@@ -14,11 +14,19 @@ public class UcenikController : ControllerBase
         _ucenikRepository = ucenikRepository;
     }
 
-    [HttpGet]
+    [HttpGet("limit")]
     public async Task<IActionResult> GetUcenici(int limit = 10)
     {
         var ucenici = await _ucenikRepository.GetUcenici(limit);
       
+        return Ok(ucenici);
+    }
+
+    [HttpGet("svi")]
+    public async Task<IActionResult> GetAllUcenici()
+    {
+        var ucenici = await _ucenikRepository.GetAllUcenici();
+
         return Ok(ucenici);
     }
 }

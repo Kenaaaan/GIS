@@ -21,5 +21,11 @@ namespace Gis.Api.Repositories
                                  .ToListAsync();
         }
 
+        public async Task<List<Ucenik>> GetAllUcenici()
+        {
+            return await _context.GetUceniciCollection()
+                                 .Find(_ => true)
+                                 .ToListAsync();
+        }
     }
 }

@@ -1,4 +1,3 @@
-// StudentDetails.tsx
 import React from "react";
 import { Student } from "../../types/Student";
 
@@ -13,28 +12,12 @@ const StudentDetails: React.FC<StudentDetailsProps> = ({ student }) => {
       <table>
         <tbody>
           <tr>
-            <td>ID</td>
-            <td>{student.id}</td>
-          </tr>
-          <tr>
-            <td>Level</td>
-            <td>{student.level}</td>
-          </tr>
-          <tr>
-            <td>Teritorija</td>
-            <td>{student.teritorija}</td>
-          </tr>
-          <tr>
             <td>Starost</td>
             <td>{student.starost}</td>
           </tr>
           <tr>
             <td>Spol</td>
             <td>{student.spol}</td>
-          </tr>
-          <tr>
-            <td>Ukupno</td>
-            <td>{student.ukupno}</td>
           </tr>
           <tr>
             <td>Ne Školuje Se</td>

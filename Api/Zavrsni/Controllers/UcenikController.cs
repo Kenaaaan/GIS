@@ -21,12 +21,4 @@ public class UcenikController : ControllerBase
       
         return Ok(ucenici);
     }
-
-    [HttpGet("svi")]
-    public async Task<IActionResult> GetAllUcenici()
-    {
-        var ucenici = await _ucenikRepository.GetAllUcenici();
-
-        return Ok(ucenici);
-    }
 }

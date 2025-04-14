@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import {
   FaHome,
   FaUserGraduate,
+  FaSchool,
   FaCog,
-  FaChartBar,
   FaMoon,
   FaSun,
 } from "react-icons/fa";
@@ -40,6 +40,7 @@ const Sidebar: React.FC = () => {
       </div>
       <nav className="flex-1 p-4 overflow-y-auto">
         <ul className="space-y-4">
+          {/* Home */}
           <li>
             <a
               href="/"
@@ -49,6 +50,8 @@ const Sidebar: React.FC = () => {
               <span className="font-medium">Home</span>
             </a>
           </li>
+
+          {/* Students */}
           <li>
             <a
               href="/students"
@@ -58,18 +61,22 @@ const Sidebar: React.FC = () => {
               <span className="font-medium">Students</span>
             </a>
           </li>
+
+          {/* Schools */}
           <li>
             <a
-              href="#"
+              href="/schools"
               className="flex items-center space-x-3 p-3 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition"
             >
-              <FaChartBar className="text-lg text-purple-500" />
-              <span className="font-medium">Reports</span>
+              <FaSchool className="text-lg text-purple-500" />
+              <span className="font-medium">Schools</span>
             </a>
           </li>
+
+          {/* Settings */}
           <li>
             <a
-              href="#"
+              href="/settings"
               className="flex items-center space-x-3 p-3 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition"
             >
               <FaCog className="text-lg text-gray-500" />

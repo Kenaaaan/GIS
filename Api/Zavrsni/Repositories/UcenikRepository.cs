@@ -20,5 +20,18 @@ namespace Gis.Api.Repositories
                                  .Limit(limit)
                                  .ToListAsync();
         }
+
+        public async Task<List<Ucenik>> GetUceniciByLocation(string location)
+        {
+            var filter = Builders<Ucenik>.Filter.Regex(
+                ucenik => ucenik.Teritorija,
+                new MongoDB.Bson.BsonRegularExpression(location, "i")
+            );
+
+            return await _context.GetUceniciCollection()
+                                 .Find(filter)
+                                 .ToListAsync();
+        }
+
     }
 }

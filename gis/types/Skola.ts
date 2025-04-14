@@ -36,6 +36,16 @@ export interface SkolaProperties {
   check_date?: string;
   name: string;
   "@geometry": string;
+  "addr:country"?: string;
+  "contact:fax"?: string;
+  wikipedia?: string;
+  denomination?: string;
+  operator?: string;
+  opening_hours?: string;
+  start_date?: string;
+  "name:fr"?: string;
+  school?: string;
+  "operator:type"?: string;
 }
 
 export interface Geometry {

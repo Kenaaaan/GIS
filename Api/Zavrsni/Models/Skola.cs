@@ -49,7 +49,19 @@ namespace Gis.Api.Models
         public string? addrStreet { get; set; }
 
         [BsonElement("contact:email")]
+        public string? contactEmail { get; set; }
+
+        [BsonElement("email")]
         public string? email { get; set; }
+
+        [BsonElement("denomination")]
+        public string? denomination { get; set; }
+
+        [BsonElement("operator")]
+        public string? operatorField { get; set; }
+
+        [BsonElement("opening_hours")]
+        public string? openingHours { get; set; }
 
         [BsonElement("contact:phone")]
         public string? Contactphone { get; set; }
@@ -63,6 +75,9 @@ namespace Gis.Api.Models
         [BsonElement("source")]
         public string? source { get; set; }
 
+        [BsonElement("website")]
+        public string? websiteSchool { get; set; }
+
         [BsonElement("fence_type")]
         public string? fenceType { get; set; }
 
@@ -71,8 +86,21 @@ namespace Gis.Api.Models
 
         [BsonElement("old_name")]
         public string? oldName { get; set; }
+
         [BsonElement("wheelchair")]
         public string? wheelchair { get; set; }
+        
+        [BsonElement("start_date")]
+        public string? startDate { get; set; }
+        
+        [BsonElement("name:fr")]
+        public string? nameFr { get; set; }
+        
+        [BsonElement("school")]
+        public string? school { get; set; }
+
+        [BsonElement("operator:type")]
+        public string? operatorType { get; set; }
 
         [BsonElement("survey:date")]
         public string? surveyDate { get; set; }
@@ -97,6 +125,15 @@ namespace Gis.Api.Models
 
         [BsonElement("wikimedia_commons")]
         public string? wikimediaCommons { get; set; }
+
+        [BsonElement("addr:country")]
+        public string? addrCountry { get; set; }
+
+        [BsonElement("contact:fax")]
+        public string? contactFax { get; set; }
+
+        [BsonElement("wikipedia")]
+        public string? wikipedia { get; set; }
 
         [BsonElement("layer")]
         public string? layer { get; set; }

@@ -4,7 +4,6 @@ const apiConfig = {
   baseURL: "https://localhost:7226/api",
   endpoints: {
     ucenikLimit: "/Ucenik/limit",
-    ucenikSvi: "/Ucenik/svi",
     Skola: "/Skola",
   },
 };
@@ -25,12 +24,14 @@ export const getUceniciDataLimit = async (limit = 10) => {
   }
 };
 
-export const getUceniciDataSvi = async () => {
+export const getSkolaData = async (limit = 10) => {
   try {
-    const response = await apiClient.get(apiConfig.endpoints.ucenikSvi);
+    const response = await apiClient.get(apiConfig.endpoints.Skola, {
+      params: { limit },
+    });
     return response.data;
   } catch (error) {
-    console.error("Error fetching Ucenici data:", error);
+    console.error("Error fetching Skola data:", error);
     throw error;
   }
 };

@@ -21,4 +21,12 @@ public class UcenikController : ControllerBase
       
         return Ok(ucenici);
     }
+
+    [HttpGet("lokacija")]
+    public async Task<IActionResult> GetUceniciPoLokacijama(string lokacija)
+    {
+        var ucenici = await _ucenikRepository.GetUceniciByLocation(lokacija);
+
+        return Ok(ucenici);
+    }
 }

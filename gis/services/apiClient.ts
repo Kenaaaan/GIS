@@ -5,6 +5,7 @@ const apiConfig = {
   endpoints: {
     ucenikLimit: "/Ucenik/limit",
     Skola: "/Skola",
+    UcenikLokacija: "/Ucenik/lokacija",
   },
 };
 
@@ -32,6 +33,18 @@ export const getSkolaData = async (limit = 10) => {
     return response.data;
   } catch (error) {
     console.error("Error fetching Skola data:", error);
+    throw error;
+  }
+};
+
+export const GetUcenikDataByLocation = async (lokacija: string) => {
+  try {
+    const response = await apiClient.get(apiConfig.endpoints.UcenikLokacija, {
+      params: { lokacija },
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching Ucenik data by location:", error);
     throw error;
   }
 };

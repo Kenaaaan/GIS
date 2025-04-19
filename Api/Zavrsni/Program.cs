@@ -1,5 +1,6 @@
 using Gis.Api.Data;
 using Gis.Api.Repositories;
+using Gis.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<MongoDbContext>(); 
 builder.Services.AddScoped<UcenikRepository>();
 builder.Services.AddScoped<SkolaRepository>();
+builder.Services.AddScoped<SkolaAnalizaService>();
 
 builder.Services.AddCors(options =>
 {

@@ -1,7 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { getUceniciDataLimit } from "../../services/apiClient";
+import {
+  getUceniciDataLimit,
+  GetUcenikDataByLocation,
+} from "../../services/apiClient";
 import { Student } from "../../types/Student";
 
 const StudentsPage: React.FC = () => {
@@ -11,8 +14,9 @@ const StudentsPage: React.FC = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const data = await getUceniciDataLimit(10);
+        const data = await GetUcenikDataByLocation("Sarajevo"); // Fetch students from the backend
         setStudents(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching students:", error);
       } finally {

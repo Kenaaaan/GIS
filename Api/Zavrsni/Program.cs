@@ -9,6 +9,7 @@ builder.Services.AddSingleton<MongoDbContext>();
 builder.Services.AddScoped<UcenikRepository>();
 builder.Services.AddScoped<SkolaRepository>();
 builder.Services.AddScoped<SkolaAnalizaService>();
+builder.Services.AddScoped<MongoDBExplorerService>();
 
 builder.Services.AddCors(options =>
 {

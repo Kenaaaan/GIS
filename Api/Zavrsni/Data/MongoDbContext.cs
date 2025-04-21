@@ -7,6 +7,8 @@ namespace Gis.Api.Data
     public class MongoDbContext
     {
         private readonly IMongoDatabase _database;
+        
+        public IMongoDatabase Database => _database;
 
         public MongoDbContext(IConfiguration config)
         {

@@ -15,9 +15,9 @@ namespace Gis.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetSkole(int limit = 10)
+        public async Task<IActionResult> GetSkole()
         {
-            var skole = await _skolaRepository.GetSkole(limit);
+            var skole = await _skolaRepository.GetSkole();
             return Ok(skole);
         }
     }

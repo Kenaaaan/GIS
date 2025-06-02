@@ -1,8 +1,4 @@
-% Ovo je glavni fajl za generiranje predloska dokumenta doktorske disertacije Elektrotehnickog fakulteta u Sarajevu. 
-% Verzija: 11. maj 2018. godine 
 
-% Autor: Emir Sokic , esokic@etf.unsa.ba
-% Bazirano na predlosku koji se koristi na FER Zagreb
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%% POSTAVKE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,8 +128,8 @@
 \includegraphics[width=0.25\textwidth]{etf-logo.png}~\\[0.1cm]
 \textsc{\Large Univerzitet u Sarajevu}\\[0.2cm]  
 \textsc{\Large Elektrotehnički fakultet}\\[0.2cm] 
-\textsc{\Large Odsjek za . . . . }\\[3cm]\HRule \\[0.5cm] 
-{\huge \bfseries Predložak za izradu završnog rada prvog ciklusa - uz korištenje Latexa kao alata} \\[0.4cm] 
+\textsc{\Large Odsjek za racunarstvo i informatiku }\\[3cm]\HRule \\[0.5cm] 
+{\huge \bfseries Prostorna analiza u NoSQL bazama podataka} \\[0.4cm] 
 \HRule \\[0.5cm]
 
 \textsc{\Large Završni rad}\\[0.4cm]
@@ -142,13 +138,13 @@
 % Author and supervisor 
 \textbf{ 
 \Large Student:\\  
-\Large Ime Prezime\\[1cm]  
+\Large Kenan Abadzic\\[1cm]  
 \Large Mentor: \\[0.2cm] 
-\Large Vanr. prof. dr Alessandro Volta.} 
+\Large Red.prof.dr. Almir Karabegović\\[0.2cm]} 
 \vfill
 
 % Bottom of the page  
-{\large Sarajevo, \\datum (npr. "juli 2018.")}
+{\large Sarajevo, juli 2025.}
 
 \end{center} 
 \end{titlepage}
@@ -166,7 +162,7 @@
 \include{izjava}
 
 %%%%%%%%%%%%%%%%%%%%% SADRŽAJ %%%%%%%%%%%%%%%%%%%%%%%%%
-%\clearpage
+\clearpage
 \tableofcontents
 
 %%%%%%%%%%%%%%% POPIS SLIKA %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,12 +194,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Poglavlja je najbolje raditi u odvojenim fajlovima
-%Poglavlje 1
-\include{poglavlje_1}
-%Poglavlje 2
-\include{poglavlje_2}
-%Poglavlje 3
-\include{poglavlje_3}
+%Uvod
+\include{Uvod}
+%Teorijski okviri
+\include{Teorijski_okviri}
+%Pregled stanja
+\include{Pregled_stanja_u_obradi_prostornih}
+%Primjer implementacije s MongoDB bazom podataka
+\include{Primjer_implementacije_s_MongoDB_bazom_podataka}
+%Analiza rezultata
+\include{Rezultati_i_diskusija}
+%Zaključak
+\include{Zakljucak}
 
 
 %%%%%%%%%%%%%%%%%%%%% PRILOZI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

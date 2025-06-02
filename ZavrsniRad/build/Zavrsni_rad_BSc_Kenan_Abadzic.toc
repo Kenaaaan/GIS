@@ -20,5 +20,3 @@
 \contentsline {section}{\numberline {A.5}Indeks pojmova i Popis oznaka}{10}{section.1.A.5}%
 \contentsline {section}{\numberline {A.6}Korištenje literature}{10}{section.1.A.6}%
 \contentsline {section}{\numberline {A.7}Programski kodovi}{10}{section.1.A.7}%
-\contentsline {chapter}{Literatura}{11}{lstnumber.1.A.1.8}%
-\contentsline {chapter}{Indeks pojmova}{11}{appendix*.16}%

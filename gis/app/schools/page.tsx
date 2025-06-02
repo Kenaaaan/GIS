@@ -30,7 +30,7 @@ const SchoolsPage: React.FC = () => {
   useEffect(() => {
     const fetchSchools = async () => {
       try {
-        const data = await getSkolaData(76); // Fetch schools from the backend
+        const data = await getSkolaData(); // Fetch schools from the backend
         setSchools(data);
       } catch (error) {
         console.error("Error fetching schools:", error);

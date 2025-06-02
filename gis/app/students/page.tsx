@@ -14,7 +14,7 @@ const StudentsPage: React.FC = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const data = await GetUcenikDataByLocation("Sarajevo"); // Fetch students from the backend
+        const data = await getUceniciDataLimit(30);
         setStudents(data);
         console.log(data);
       } catch (error) {

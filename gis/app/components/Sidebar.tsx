@@ -7,6 +7,7 @@ import {
   FaCog,
   FaMoon,
   FaSun,
+  FaChartLine,
 } from "react-icons/fa";
 
 const Sidebar: React.FC = () => {
@@ -70,6 +71,17 @@ const Sidebar: React.FC = () => {
             >
               <FaSchool className="text-lg text-purple-500" />
               <span className="font-medium">Schools</span>
+            </a>
+          </li>
+
+          {/* Analytics */}
+          <li>
+            <a
+              href="/analytics"
+              className="flex items-center space-x-3 p-3 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+            >
+              <FaChartLine className="text-lg text-orange-500" />
+              <span className="font-medium">Analytics</span>
             </a>
           </li>
 

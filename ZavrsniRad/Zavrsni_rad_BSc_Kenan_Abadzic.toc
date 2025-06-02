@@ -1,0 +1,24 @@
+\babel@toc {croatian}{}\relax 
+\thispagestyle {empty}
+\contentsline {chapter}{Popis slika}{v}{chapter*.4}%
+\contentsline {chapter}{Popis tabela}{vi}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Uvod}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Obrazloženje teme}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Struktura rada}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Centralna poglavlja}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Primjer sekcije}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Primjer podsekcije}{2}{subsection.2.1.1}%
+\contentsline {subsubsection}{Primjer podpodsekcije}{2}{section*.6}%
+\contentsline {paragraph}{Primjer paragrafa}{3}{section*.7}%
+\contentsline {subparagraph}{Primjer podparagrafa}{3}{section*.8}%
+\contentsline {chapter}{Prilozi}{5}{section*.11}%
+\contentsline {chapter}{\numberline {A}Korištenje funkcija u Tex-u}{6}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Matematički izraz}{6}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Slika}{6}{section.1.A.2}%
+\contentsline {section}{\numberline {A.3}Tabela}{6}{section.1.A.3}%
+\contentsline {section}{\numberline {A.4}\textit {Landscape}}{6}{section.1.A.4}%
+\contentsline {section}{\numberline {A.5}Indeks pojmova i Popis oznaka}{10}{section.1.A.5}%
+\contentsline {section}{\numberline {A.6}Korištenje literature}{10}{section.1.A.6}%
+\contentsline {section}{\numberline {A.7}Programski kodovi}{10}{section.1.A.7}%
+\contentsline {chapter}{Literatura}{11}{lstnumber.1.A.1.8}%
+\contentsline {chapter}{Indeks pojmova}{11}{appendix*.16}%

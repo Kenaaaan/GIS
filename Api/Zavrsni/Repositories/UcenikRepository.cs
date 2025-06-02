@@ -1,6 +1,7 @@
 ﻿using Gis.Api.Data;
 using MongoDB.Driver;
 using Gis.Api.Models;
+using MongoDB.Bson;
 
 namespace Gis.Api.Repositories
 {
@@ -16,13 +17,17 @@ namespace Gis.Api.Repositories
 
         public async Task<List<Ucenik>> GetUcenici(int limit)
         {
-            var filter = Builders<Ucenik>.Filter.Eq(u => u.Teritorija, SarajevoLocation);
-            
+            var regexFilter = Builders<Ucenik>.Filter.Regex(
+                ucenik => ucenik.Teritorija,
+                new BsonRegularExpression("Sarajevo|Bosna i Hercegovina", "i")
+            );
+
             return await _context.GetUceniciCollection()
-                                 .Find(filter)  
+                                 .Find(regexFilter)
                                  .Limit(limit)
                                  .ToListAsync();
         }
+
 
         public async Task<List<Ucenik>> GetUceniciByLocation(string location)
         {
